@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HidrateSapark | Smart Water Bottle | Apple</title>
+    <link rel="icon" href="assests/images/logo.png">
+    <link rel="stylesheet" href="assests/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="logo"><img src="assests/images/logo.png"></div>
+        <div class="menu"><img src="assests/images/icons8-menu-rounded-100.png"></div>
+    </div>
+    <div class="banner">
+        <div class="content"><h2><span>HidrateSpark PRO STEEL - 32 oz.</span> Smart Water Bottle + Bonus Straw Lid</h2>
+        <!-- <p>$65.55</p> -->
+    </div>
+
+        <div class="image">
+            <img class="red" src="assests/images/bottlered.png">
+            <img class="blue" src="assests/images/bottleblue.png">
+            <img class="green" src="assests/images/bottlegreen.png">
+    </div>
+    <div class="button">
+    <button class="add">Add to Bag</button></div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="product-info">
+        <h2>Product Information</h2>
+        <p><span>HidrateSpark STEEL</span> is a stainless-steel, vacuum-insulated chug that keeps drinks cold up to 24 hours. LED smart sensor “puck” glows to remind you when it’s time to drink and tracks your water intake by syncing via bluetooth to the HidrateSpark App. The HidrateSpark STEEL bundle includes both a chug and a straw lid.</p>
+    <h2>How does HidrateSpark STEEL work?</h2>
+    <p>Throughout each day, <span>HidrateSpark STEEL</span> calculates and adjusts a personalized hydration goal based on your body and activity level. The sensor puck tracks how many ounces or millimeters you drink and then records it via the app on your iPhone, iPad, and Apple Watch</p>
+    </div>
+
+    <div class="bottle-anim">
+        <img class="top" src="assests/images/bottletop.png">
+        <img class="body" src="assests/images/bottlebody.png">
+        <img class="bottom" src="assests/images/bottlebottom.png">
+    </div>
+
+
+
+
+    <div class="highlights">
+        <h2>Highlights</h2>
+       <ul>
+        <li>Glows to remind you to drink throughout the day and can be customized by <label>pattern</label> and <lable>color</lable></li>
+        
+        <li>Sensor puck tracks water intake, syncs via <label>Bluetooth</label> to the Free HidrateSpark App</li>
+        
+        <li>Rechargeable battery with included <label>fast-charging</label> cable</li>
+        
+        <li>Stainless steel and vacuum insulated to keep drinks cold for up to <lable>24 hours</lable></li>
+        
+        <li>BPA Free</li>
+        
+        <li>Protective spout cover and lock to keep out dirt and germs and <label>prevent spills</label></li>
+        
+        <li>Clinically proven accuracy within 3% of manual readings through <label>Mayo Clinic trials</label></li>
+        
+       <li>Carry loop makes it easy to carry on-the-go</li>
+        
+       <li>Bottle and lids are <label>dishwasher safe.</label> Clean sensor puck with a damp cloth</li></ul>
+    </div>
+
+
+
+
+
+
+
+    <div class="video">
+        <h2>Watch the video by HidrateSpark</h2>
+
+            <video autoplay controls muted src="assests/images/HidrateSpark Pro_ The World's Smartest Water Bottle.mp4">
+        </video>
+    </div>
+    <footer>
+        <p>Copyright © 2022 Apple Inc. All rights reserved</p>
+        <ul>
+            <li>Privacy Policy    </li>
+            <li>Terms of Use    </li>
+            <li>Sales and Refunds    </li>
+            <li>Legal    </li>
+            <li>Site Map    </li>
+        </ul>
+    </footer>
+    <script>
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".banner",
+                    start: "top 6%",
+                    end: "bottom 0%",
+                    scrub: true,
+                //  markers:true,
+                
+                pin:true
+                }
+            })
+                .to(".green", { opacity:0,
+                
+        
+                 })
+                
+                .to(".blue", { opacity:0 })
+
+
+
+
+
+                gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".bottle-anim",
+                    start: "top top",
+                    end: "bottom  top",
+                    scrub: true,
+    
+                
+                pin:true
+                }
+            })
+            .to(".top",{
+                opacity:1
+            })
+                .to(".body", { opacity:1,
+                    // top:-97,
+                    top:"-15%"
+                
+                
+        
+                 })
+                
+                .to(".bottom", { opacity:1,
+                top:"-33%" })
+                
+
+            
+               
+            </script>
+    
+</body>
+</html>
